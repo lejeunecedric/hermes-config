@@ -19,22 +19,25 @@ https://hermes-agent.nousresearch.com/docs/user-guide/docker
 So with a basic install, we start with multiple agents running in the same instance.
 Doc is here : https://hermes-agent.nousresearch.com/docs/user-guide/multi-profile-gateways
 
-# Create profiles (once)
+The gateway is the where you interact with the agent with external services (Whatsapp, Telegram...) so you want one per agent. The "agent" will be a profile, each can have a separate token provider, separate SOUL.md and config files, separate Telegram bot, etc.
+
+To Create profiles (once) :
 hermes profile create coder
 hermes profile create personal-bot
 hermes profile create research
 
-# Configure each
+To configure each :
 coder setup
 personal-bot setup
 research setup
 
-# Install each gateway as a managed service
+To install each gateway as a managed service :
 coder gateway install
 personal-bot gateway install
 research gateway install
 
-# Start them all
+To start them all
 coder gateway start
 personal-bot gateway start
 research gateway start
+
