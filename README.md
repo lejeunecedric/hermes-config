@@ -21,6 +21,7 @@ Doc is here : https://hermes-agent.nousresearch.com/docs/user-guide/multi-profil
    
 The gateway is the where you interact with the agent with external services (Whatsapp, Telegram...) so you want one per agent. The "agent" will be a profile, each can have a separate token provider, separate SOUL.md and config files, separate Telegram bot, etc.  
 Choosing the right organisation, roles and naming for agents is an interesting exercise. Agents are not human, but you will interact with them with human language, that can be a trap.  
+Also my goal is to have memory and tasked shared between "colleagues" working together on one project.
 
 Hermes can delegate tasks to agents, so I prefer to have agents to be seen as “job description”  
 
@@ -51,7 +52,7 @@ coder gateway start
 personal-bot gateway start  
 research gateway start  
    
-The setup is pretty straight forward, but there may be some hiccups : the Signal connection needs an external service, signal-cli  that proved a little difficult : I managed by installing manually from https://github.com/AsamK/signal-cli, redo a PROFILENAME gateway setup and chat with PROFILENAME to finalize the setup
+The gateway setup is pretty straight forward, but there may be some hiccups : the Signal connection needs an external service, signal-cli  that proved a little difficult : I managed by installing manually from https://github.com/AsamK/signal-cli, redo a PROFILENAME gateway setup and chat with PROFILENAME to finalize the setup
 
    
 Next steps : memory configuration, Kanban...  
